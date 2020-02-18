@@ -1,5 +1,11 @@
 # README
 
+Project Name: Photosite
+
+My Name: Tamish Mukeshkumar Patel
+
+State of project: FULLY working
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
