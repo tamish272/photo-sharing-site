@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photosite</title>
+</head>
+<body bgcolor="#adff2f">
+<div style="color: black">
+  <div style="text-align: center;">
+    <h1>PHOTOSITE</h1>
+  </div>
+</div>
+<div>
+  <div style="text-align: center;">
+    <table align="center"; cellspacing="10px">
+      <tr>
+        <th>USER</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+      </tr>
+      <% @users.each do |user| %>
+        <tr>
+          <th><%= link_to user.id, user_photos_path(user.id) %></th>
+          <td><%= user.first_name %></td>
+          <td><%= user.last_name %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+</body>
+</html>
